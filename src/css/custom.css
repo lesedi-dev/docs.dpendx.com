@@ -1,0 +1,162 @@
+/**
+ * dpendx documentation theme
+ * Based on Infima CSS framework
+ */
+
+/* Light theme colors */
+:root {
+  --ifm-color-primary: #0969da;
+  --ifm-color-primary-dark: #085ec4;
+  --ifm-color-primary-darker: #0859b9;
+  --ifm-color-primary-darkest: #064998;
+  --ifm-color-primary-light: #1a7ae8;
+  --ifm-color-primary-lighter: #2585f0;
+  --ifm-color-primary-lightest: #4a9df5;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark theme colors */
+[data-theme='dark'] {
+  --ifm-color-primary: #58a6ff;
+  --ifm-color-primary-dark: #3996ff;
+  --ifm-color-primary-darker: #2990ff;
+  --ifm-color-primary-darkest: #0077f5;
+  --ifm-color-primary-light: #77b6ff;
+  --ifm-color-primary-lighter: #87bcff;
+  --ifm-color-primary-lightest: #b6d6ff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Improve code block styling */
+.prism-code {
+  font-size: 0.9rem;
+}
+
+/* Better table styling */
+table {
+  display: table;
+  width: 100%;
+}
+
+table th {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+[data-theme='dark'] table th {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+/* Improve admonition styling */
+.admonition {
+  border-radius: 8px;
+}
+
+/* Hero section improvements */
+.hero--primary {
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary) 0%,
+    var(--ifm-color-primary-dark) 100%
+  );
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+/* Better link styling in docs */
+.markdown a {
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar improvements */
+.menu__link {
+  font-size: 0.95rem;
+}
+
+/* Footer improvements */
+.footer--dark {
+  background-color: #1a1a1a;
+}
+
+[data-theme='dark'] .footer--dark {
+  background-color: #0d1117;
+}
+
+/* Announcement bar */
+.announcementBar_node_modules-\@docusaurus-theme-classic-lib-theme-AnnouncementBar-styles-module {
+  font-size: 0.95rem;
+}
+
+/* Better inline code styling */
+code {
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+}
+
+/* Table of contents */
+.table-of-contents {
+  font-size: 0.9rem;
+}
+
+/* Search improvements */
+.DocSearch-Button {
+  border-radius: 8px !important;
+}
+
+/* Card-like styling for feature sections */
+.card {
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+[data-theme='dark'] .card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Badge styling */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge--success {
+  background-color: #2ea44f;
+  color: white;
+}
+
+.badge--warning {
+  background-color: #d29922;
+  color: white;
+}
+
+.badge--danger {
+  background-color: #cf222e;
+  color: white;
+}
+
+.badge--info {
+  background-color: #0969da;
+  color: white;
+}
