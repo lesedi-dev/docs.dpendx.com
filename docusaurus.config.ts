@@ -2,6 +2,11 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+// Environment variables with defaults
+const DOCS_URL = process.env.DOCS_URL || "https://docs.dpendx.com";
+const GITHUB_REPO_URL = process.env.GITHUB_REPO_URL || "https://github.com/dpendx";
+const GITHUB_APP_INSTALL_URL = process.env.GITHUB_APP_INSTALL_URL || "https://github.com/apps/dpendx/installations/select_target";
+
 const config: Config = {
     title: "dpendx",
     tagline: "Block insecure dependencies before they ship",
@@ -11,7 +16,7 @@ const config: Config = {
         v4: true,
     },
 
-    url: "https://docs.dpendx.com",
+    url: DOCS_URL,
     baseUrl: "/",
 
     organizationName: "dpendx",
@@ -31,7 +36,7 @@ const config: Config = {
             {
                 docs: {
                     sidebarPath: "./sidebars.ts",
-                    editUrl: "https://github.com/dpendx/tree/main/docs/",
+                    editUrl: `${GITHUB_REPO_URL}/tree/main/docs/`,
                     routeBasePath: "/",
                 },
                 blog: false,
@@ -52,7 +57,7 @@ const config: Config = {
         announcementBar: {
             id: "github_star",
             content:
-                'If you like dpendx, give us a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/dpendx">GitHub</a>!',
+                `If you like dpendx, give us a star on <a target="_blank" rel="noopener noreferrer" href="${GITHUB_REPO_URL}">GitHub</a>!`,
             backgroundColor: "#2e8555",
             textColor: "#fff",
             isCloseable: true,
@@ -71,12 +76,12 @@ const config: Config = {
                     label: "Docs",
                 },
                 {
-                    href: "https://github.com/apps/dpendx/installations/select_target",
+                    href: GITHUB_APP_INSTALL_URL,
                     label: "Install App",
                     position: "left",
                 },
                 {
-                    href: "https://github.com/dpendx",
+                    href: GITHUB_REPO_URL,
                     label: "GitHub",
                     position: "right",
                 },
@@ -107,11 +112,11 @@ const config: Config = {
                     items: [
                         {
                             label: "GitHub",
-                            href: "https://github.com/dpendx",
+                            href: GITHUB_REPO_URL,
                         },
                         {
                             label: "Discussions",
-                            href: "https://github.com/dpendx/discussions",
+                            href: `${GITHUB_REPO_URL}/discussions`,
                         },
                     ],
                 },
