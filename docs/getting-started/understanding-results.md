@@ -175,6 +175,5 @@ When facing multiple vulnerabilities, prioritize by:
 
 ## Next Steps
 
-- [Learn how dpendx works under the hood](/core-concepts/how-it-works)
-- [Understand reachability analysis](/core-concepts/reachability-analysis)
-- [Troubleshoot common issues](/troubleshooting/common-issues)
+- [Explore supported ecosystems](/ecosystems/overview)
+- [FAQ](/faq)

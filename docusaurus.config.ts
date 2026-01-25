@@ -86,40 +86,19 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Documentation',
+          title: 'Docs',
           items: [
             {
               label: 'Getting Started',
               to: '/getting-started/quick-start',
             },
             {
-              label: 'Core Concepts',
-              to: '/core-concepts/how-it-works',
-            },
-            {
-              label: 'API Reference',
-              to: '/api-reference/overview',
-            },
-          ],
-        },
-        {
-          title: 'Ecosystems',
-          items: [
-            {
-              label: 'Go',
-              to: '/ecosystems/go',
-            },
-            {
-              label: 'npm',
-              to: '/ecosystems/npm',
-            },
-            {
-              label: 'Python',
-              to: '/ecosystems/python',
-            },
-            {
-              label: 'All Ecosystems',
+              label: 'Ecosystems',
               to: '/ecosystems/overview',
+            },
+            {
+              label: 'FAQ',
+              to: '/faq',
             },
           ],
         },
@@ -129,10 +108,6 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/dpendx/dpendx',
-            },
-            {
-              label: 'Issues',
-              href: 'https://github.com/dpendx/dpendx/issues',
             },
             {
               label: 'Discussions',

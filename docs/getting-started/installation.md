@@ -100,7 +100,7 @@ After installation, verify dpendx is working:
 2. Look for the **dpendx** check in the PR's checks section
 3. Wait for the scan to complete
 
-If you don't see the check appear, see [Troubleshooting: Check Run Not Appearing](/troubleshooting/common-issues#check-run-not-appearing).
+If you don't see the check appear, see the [FAQ](/faq#why-doesnt-the-check-appear-on-my-pr).
 
 ## Next Steps
 

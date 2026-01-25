@@ -165,5 +165,4 @@ Scans have a 5-minute timeout. Very large monorepos may need optimization.
 ## Next Steps
 
 - [Learn to interpret scan results](/getting-started/understanding-results)
-- [Understand the OSV database](/core-concepts/osv-database)
-- [Deep dive into reachability analysis](/core-concepts/reachability-analysis)
+- [FAQ](/faq)
