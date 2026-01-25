@@ -8,7 +8,7 @@ Get dpendx scanning your Pull Requests in under 5 minutes.
 
 ## Step 1: Install the GitHub App
 
-1. Visit the [dpendx GitHub App](https://github.com/apps/dpendx-bot)
+1. Visit the [dpendx GitHub App](https://github.com/apps/dpendx/installations/select_target)
 2. Click **Install**
 3. Choose which repositories to enable:
    - **All repositories** - Scan every repo in your organization

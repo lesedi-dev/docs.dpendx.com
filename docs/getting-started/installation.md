@@ -10,7 +10,7 @@ This guide covers the complete installation process and explains each permission
 
 ### Step 1: Navigate to the App
 
-Visit the [dpendx GitHub App page](https://github.com/apps/dpendx-bot) and click **Install**.
+Visit the [dpendx GitHub App page](https://github.com/apps/dpendx/installations/select_target) and click **Install**.
 
 ### Step 2: Choose an Account
 

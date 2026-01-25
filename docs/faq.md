@@ -83,5 +83,5 @@ This feature is on our roadmap but not yet available.
 
 ## How do I report a bug or request a feature?
 
-- [GitHub Issues](https://github.com/dpendx/dpendx/issues) - Bug reports
-- [GitHub Discussions](https://github.com/dpendx/dpendx/discussions) - Questions and feature requests
+- [GitHub Issues](https://github.com/dpendx/issues) - Bug reports
+- [GitHub Discussions](https://github.com/dpendx/discussions) - Questions and feature requests
