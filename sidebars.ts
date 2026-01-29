@@ -16,6 +16,14 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Features',
+      items: [
+        'features/sbom-generation',
+        'features/license-compliance',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Ecosystems',
       items: [
         'ecosystems/overview',
