@@ -139,6 +139,39 @@ Below the vulnerability table, dpendx provides specific remediation commands:
 
 Copy these commands directly to fix the issues.
 
+## Code Quality Findings
+
+If [code quality analysis](/features/code-quality) is enabled, findings appear as a separate **Code Quality** section in the report:
+
+```markdown
+## Code Quality
+
+Found 3 issues (1 error, 1 warning, 1 info)
+
+| File | Line | Category | Severity | Message |
+|------|------|----------|----------|---------|
+| api/handler.go | 42 | security | error | Potential SQL injection |
+| utils/parse.go | 118 | complexity | warning | Cyclomatic complexity 22 (threshold: 15) |
+| utils/parse.go | 15 | dead_code | info | Unused import: "strings" |
+```
+
+Code quality issues are reported alongside vulnerability findings but do not block PR merges.
+
+## License Compliance Findings
+
+When [license compliance](/features/license-compliance) is enabled, violations appear with severity badges:
+
+```markdown
+## License Compliance
+
+| Package | Version | License | Issue |
+|---------|---------|---------|-------|
+| some-pkg | 1.0.0 | GPL-3.0 | copyleft license |
+| other-pkg | 2.0.0 | Unknown | unknown license |
+```
+
+License violations may block PRs depending on your configured policy.
+
 ## Scan Details Section
 
 At the bottom of the report:

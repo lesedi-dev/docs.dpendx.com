@@ -20,6 +20,8 @@ const sidebars: SidebarsConfig = {
       items: [
         'features/sbom-generation',
         'features/license-compliance',
+        'features/code-quality',
+        'features/configuration',
       ],
     },
     {

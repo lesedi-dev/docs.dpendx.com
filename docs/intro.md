@@ -13,9 +13,19 @@ Install the dpendx GitHub App on your repository. When you open a Pull Request, 
 
 1. **Scans your dependencies** for known vulnerabilities
 2. **Checks if you're actually using** the vulnerable packages
-3. **Reports findings** directly on your PR
+3. **Runs additional checks** - license compliance and code quality analysis
+4. **Reports findings** directly on your PR
 
 If vulnerabilities are found in packages your code imports, the PR is blocked until you fix them.
+
+### Beyond Vulnerabilities
+
+dpendx goes beyond dependency vulnerability scanning:
+
+- **[License Compliance](/features/license-compliance)** - Check dependencies against configurable license policies
+- **[Code Quality Analysis](/features/code-quality)** - Catch security anti-patterns, bugs, complexity, and more in changed files
+- **[SBOM Export](/features/sbom-generation)** - Generate CycloneDX SBOMs for compliance and auditing
+- **[Diff Scanning](/features/configuration)** - Scan only changed files for faster feedback on large repos
 
 ## Supported Languages
 

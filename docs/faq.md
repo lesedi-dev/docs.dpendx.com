@@ -79,7 +79,48 @@ No. dpendx reads your dependency files during the scan but does not store your s
 
 ## Can I ignore specific vulnerabilities?
 
-This feature is on our roadmap but not yet available.
+Yes. Add the vulnerability IDs to the `ignore_ids` list in your `.dpendx.yml`:
+
+```yaml
+vulnerability:
+  ignore_ids:
+    - "CVE-2021-23337"
+    - "GHSA-xxxx-xxxx-xxxx"
+```
+
+Ignored vulnerabilities are suppressed from scan results and will not block your PR. See the [Configuration](/features/configuration) page for the full `.dpendx.yml` reference.
+
+## What is license compliance scanning?
+
+dpendx checks your dependencies for license compliance issues. You can configure a policy that defines which licenses are acceptable:
+
+- **Permissive policy** (default) - Allows MIT, Apache-2.0, BSD, etc. Warns on copyleft licenses like GPL and AGPL.
+- **Custom policy** - Define explicit `allowed` and `blocked` license lists.
+
+License violations appear as warnings or blockers depending on your policy. See [License Compliance](/features/license-compliance) for details.
+
+## What does code quality analysis check?
+
+When enabled, dpendx runs 6 code quality analyzers on changed files in your PR:
+
+- **Security** - SQL injection, hardcoded secrets, unsafe eval
+- **Bug patterns** - Nil dereference, unchecked errors, race conditions
+- **Complexity** - Functions exceeding a configurable cyclomatic complexity threshold
+- **Naming** - Language-specific naming convention violations
+- **Duplicate code** - Repeated code blocks across files
+- **Dead code** - Unused imports and unreachable statements
+
+Code quality is disabled by default. Enable it in your [`.dpendx.yml` configuration](/features/configuration). See [Code Quality Analysis](/features/code-quality) for details.
+
+## What is SBOM export?
+
+dpendx can generate a Software Bill of Materials (SBOM) in CycloneDX JSON format for any completed scan. SBOMs provide a complete inventory of your dependencies, useful for:
+
+- **Compliance audits** - Meet regulatory requirements for software transparency
+- **Supply chain security** - Track exactly what's in your software
+- **License tracking** - See all licenses across your dependency tree
+
+See [SBOM Generation](/features/sbom-generation) for the API endpoint and format details.
 
 ## How do I report a bug or request a feature?
 
